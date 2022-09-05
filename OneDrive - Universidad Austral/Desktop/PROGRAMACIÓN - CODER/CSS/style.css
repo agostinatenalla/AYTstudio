@@ -1,201 +1,85 @@
-*{
-    padding: 2px;
-    margin: 2px;
-    box-sizing: border-box;
-    font-family: Poppins;
+.container-fluid{
+  margin-right: auto;
 }
 
-/*NAVBAR*/
-.logo img{
-  position: absolute;
-  margin-top: 5px;
-  margin-left: 10px;
-  width: 200px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-        }
-  
-li{
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    }
-
-  li a:hover:not(.active) {
-    background-color: #515751;
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
-
-body, html {
-    height: 100%;
-}
-/* The hero image */
-.bannerhero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../Assets/img/Carrusel1.jpeg");
-  
-    height: 60%;
-  
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-
-  .boton{
-    background-color: black; 
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-
-/* TARJETAS */
-.container{
-  text-align: center;
-  color: white;
-  width: 100%;
-  height: 150px;
-  padding: 40px;
-  height: 200px;
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}
-
-.grid-contenido{
-  display: grid;
-  grid-template-columns: auto auto auto;
-  width: 80%;
-  margin: 0 auto;
-}
-
-.caja{
-  width: 350px;
-  height: 250px;
-  margin: auto auto 350px auto;
+.info1{
+  padding: 50px;
   text-align: justify;
-  float: left;
-  justify-content: center;
+  background-color: black;
+  color: white;
 }
 
-.titulo{
+.info2{
+  background-image: url(../Assets/img/Galeria6.jpg);
+  background-image: cover;
+  }
+
+.info3{
+  padding: 100px;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
-/* GALERIA DE FOTOS */
-.sectionContainer{
+.boton{
+background-color: black;
+color: white;
+}
+
+footer{
+  background-color: #F7F7F2;
+  color: black;
+  text-align: center;
+  padding: 50px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.row-card{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.gallery-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 1%;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 991px){
-  .gallery-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-columns: 25%;
-    grid-gap: 1%;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1024px){
-  .gallery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-columns: 25%;
-    grid-gap: 1%;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 1%;
-  transition: all 0.5s;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-img:hover {
-  cursor: pointer;
-  opacity: 0.5;
+.btn btn-primary{
+  color: black;
 }
 
-.footer_index{
+.card1{
+  margin: 60px 30px 60px 80px;
+}
+
+.card2{
+  margin: 60px 30px 60px 30px;
+}
+
+.card3{
+  margin: 60px 30px 60px 30px;
+}
+
+.container-fluid-2{
+  background-color: #F7F7F2;
+}
+
+.Contenido1{
+  padding: 80px;
+  text-align: justify;
   background-color: black;
-  text-align: center;
   color: white;
-  text-decoration: none;
-  width: 100%;
-  height: 100px; 
-  position: absolute;
-  margin-top: 400px;
-  padding: 30px;
+  font-size: small;
 }
 
-.footer_servicio{
-  background-color: black;
-  text-align: center;
-  color: white;
-  text-decoration: none;  
-}
+.Contenido2{
+  position: center;
+  margin: auto;
+  }
 
-.footer_porfolio{
+  .Contenido3{
+  padding: 80px;
+  text-align: justify;
   background-color: black;
-  text-align: center;
   color: white;
-  text-decoration: none;  
-}
-
-.footer_elestudio{
-  background-color: black;
-  text-align: center;
-  color: white;
-  text-decoration: none;  
-}
-
-.footer_contacto{
-  background-color: black;
-  text-align: center;
-  color: white;
-  text-decoration: none;  
-}
+  font-size: small
+  }
